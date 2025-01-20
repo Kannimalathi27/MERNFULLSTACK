@@ -1,0 +1,33 @@
+body{
+    color: white;
+    font-family: "Roboto", serif;
+    background-image: url(https://ik.imagekit.io/MERNFullstack/todolistbg.webp?updatedAt=1737353514443);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-weight: 900;
+}
+.para1{
+    text-align: center;
+}
+.para2{
+    text-align: left;
+}
+.para3{
+    text-align: center;
+    text-decoration: underline
+}
+.container{
+    text-align: center;
+    size: 20px;
+    
+}   
+#button{
+    text-align: center;
+    background-color: orange;
+    
+}
