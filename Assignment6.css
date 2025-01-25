@@ -1,0 +1,9 @@
+.bgimage{
+    background-image: url('https://ik.imagekit.io/MERNFullstack/chatbg.png?updatedAt=1737617306297');
+    height: 100vh;
+    width: 350px;
+    background-repeat:no-repeat;
+    font-family: "Roboto", serif;
+
+
+}
