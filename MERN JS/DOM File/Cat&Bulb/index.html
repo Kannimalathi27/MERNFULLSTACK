@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT&BULB</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>  
+</head>
+<body>
+    <div class="bg-black h-[100vh] flex flex-col items-center justify-center">
+    <img src="https://ik.imagekit.io/MERNFullstack/bulb-go-on-img.png" alt="Bulb Image" id="bulb" class="h-[220px] w-[220px]">
+    <img src="https://ik.imagekit.io/MERNFullstack/cat-img.png" alt="Cat Image" id="cat" class="h-[220px] w-[220px]">
+    <div class="bg-gray-500 w-64 rounded-xl flex flex-col justify-center items-center gap-3 py-6">
+        <p id="para">Switched On</p>
+        <div class="flex flex-row justify-center items-center gap-3">
+            <button id="off" class="bg-red-500 px-3 py-1 rounded-lg">Off</button>
+            <button id="on" class="bg-green-500 px-3 py-1 rounded-lg">On</button>
+        </div>
+    </div>
+</div>
+    <script>
+        const bulbElement = document.getElementById("bulb");
+        const catElement = document.getElementById("cat");
+        const paraElement = document.getElementById("para");
+        const offElement = document.getElementById("off");
+        const onElement = document.getElementById("on");
+        offElement.addEventListener("click", ()=>{
+            console.log("-off")
+            bulbElement.src ="https://ik.imagekit.io/MERNFullstack/bulb-go-off-img.png"
+            catElement.src = "https://ik.imagekit.io/MERNFullstack/cat-eyes-img.png"
+            paraElement.textContent ="Switched Off"
+            offElement.className = "bg-slate-700"
+            onElement.className = "bg-green-500"
+            offElement.style.paddingLeft ="12px"
+            offElement.style.paddingRight ="12px"
+            offElement.style.paddingTop ="4px"
+            offElement.style.paddingBottom ="4px"
+            onElement.style.paddingLeft ="12px"
+            onElement.style.paddingRight ="12px"
+            onElement.style.paddingTop ="4px"
+            onElement.style.paddingBottom ="4px"
+            offElement.style.borderRadius = "8px" 
+        })
+        onElement.addEventListener("click", ()=>{
+            console.log("-on")
+            bulbElement.src = "https://ik.imagekit.io/MERNFullstack/bulb-go-on-img.png"
+            catElement.src = "https://ik.imagekit.io/MERNFullstack/cat-img.png"
+            paraElement.textContent ="Switched On"
+            onElement.className = "bg-slate-700"
+            offElement.className = "bg-red-500"
+            onElement.style.paddingLeft ="12px"
+            onElement.style.paddingRight ="12px"
+            onElement.style.paddingTop ="4px"
+            onElement.style.paddingBottom ="4px"
+            offElement.style.paddingLeft ="12px"
+            offElement.style.paddingRight ="12px"
+            offElement.style.paddingTop ="4px"
+            offElement.style.paddingBottom ="4px"
+            onElement.style.borderRadius = "8px"         
+        })        
+    </script>
+</body>
+</html>

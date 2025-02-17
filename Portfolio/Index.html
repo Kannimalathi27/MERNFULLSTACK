@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Portfolio | Ask me anything</title>
-    <link rel="stylesheet" href="../Fonts/WEB/css/satoshi.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Fonts/WEB/css/satoshi.css">
 </head>
 <body>
     <!-- Index Section Starting -->
+    <section>
         <div class="2xl:container mx-auto">
             <!-- Title Card -->
-            <div class=" font-[Satoshi-Regular] w-[70%] mx-auto grid grid-col grid-cols-1 py-4"> 
+            <div class=" font-[Satoshi-Regular] w-[70%]  mx-auto grid grid-col grid-cols-1 py-4"> 
                 <div class="flex justify-between">
                     <div>
                         <h1 class="text-[30px] font-[400] leading-[36px]">My Portfolio</h1>
@@ -32,62 +33,99 @@
                             </g>
                           </svg>
                         </div>
-                </div>                    
+                      
+                </div>
+
+
             </div>
-            <!-- Navbar -->
-            <div class="w-[100%] hidden md:block">
-            <div class="font-[Satoshi-Regular] w-[70%] mx-auto grid grid-col grid-cols-1 bg-white">
-        
-                    <div class="flex flex-row justify-around rounded-full shadow-lg py-3 md:flex lg:flex sm:hidden">
-                        <a href="../Index.html">Home</a>
-                        <a href="About.html">About</a>
-                        <a href="Projects.html">Projects</a>
-                        <a href="Resume.html">Resume</a>
-                        <a href="Tools.html">Tools</a>
-                        <a href="Ama.html">Ama</a>
+            <!-- Description -->
+             <div class="font-[Satoshi-Regular] w-[70%] mx-auto grid grid-col grid-cols-1 py-4">
+                <div>
+                    <p class="text-[44px] font-[400] leading-[65px]">Hi I'm Kannimalathi 🤝, Working in <span class="hover:underline"> Process Associate </span> at Tata Consultancy Services Private Limited ⚡, Aspiring to become a MERN Full Stack Developer 💻</p>
+                </div>
+             </div>
+             <!-- Menu -->
+                <div class="font-[Satoshi-Regular] w-[70%] mx-auto grid grid-col grid-cols-1 py-4 gap-3">
+                    <div>
+                        <div class= "flex flex-row justify-between items-center hover:rotate-1" >
+                            <a href="Pages/About.html">
+                            <p class="text-[25px] font-[400] leading-[38px]">About</p></a>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="2em"
+                                    height="2em"
+                                    {...props}
+                                >
+                                    <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                </svg>
+                            
+                        </div>
                     </div>
-            </div>
-            </div>
-            <!-- Bottom navbar -->
-            <div class="fixed bottom-1 w-[100%] md:hidden">
-                <div class="font-[Satoshi-Regular] w-[70%] mx-auto grid grid-col grid-cols-1 bg-white">
-                    <div class="flex flex-row justify-around rounded-full shadow-lg py-3">
-                        <a href="../Index.html">Home</a>
-                        <a href="About.html">About</a>
-                        <a href="Projects.html">Projects</a>
-                        <a href="Resume.html">Resume</a>
-                        <a href="Tools.html">Tools</a>
-                        <a href="Ama.html">Ama</a>
+                    <div>
+                        <div class= "flex flex-row justify-between items-center hover:rotate-1" >
+                            <a href="Pages/Projects.html">
+                            <p class="text-[25px] font-[400] leading-[38px]">Projects</p></a>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="2em"
+                                        height="2em"
+                                        {...props}
+                                    >
+                                        <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                    </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <div class= "flex flex-row justify-between items-center hover:rotate-1" >
+                            <a href="Pages/Resume.html">
+                            <p class="text-[25px] font-[400] leading-[38px]">Resume</p></a>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            width="2em"
+                                            height="2em"
+                                            {...props}
+                                        >
+                                            <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                        </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <div class= "flex flex-row justify-between items-center hover:rotate-1" >
+                            <a href="Pages/Tools.html">
+                            <p class="text-[25px] font-[400] leading-[38px]">Tools</p></a>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="2em"
+                                                height="2em"
+                                                {...props}
+                                            >
+                                                <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <div class= "flex flex-row justify-between items-center hover:rotate-1" >
+                            <a href="Pages/Ama.html">
+                            <p class="text-[25px] font-[400] leading-[38px]">Ama</p></a>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    width="2em"
+                                                    height="2em"
+                                                    {...props}
+                                                >
+                                                    <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                                </svg>
+                        </div>
                     </div>
                 </div>
-            </div>
-               <!-- Main Section -->
-            <div class="font-[Satoshi-Regular] w-[70%] mx-auto grid grid-col grid-cols-1 py-4">
-            <div class="space-y-5">
-                <form action="" class="space-y-3">
-                    <div class="flex flex-col">
-                        <label for="Email" >Email</label>
-                        <input type="email" name="" id="Email" class="text-black border border-black w-[250px]">
-                    </div>
-                    <div class="flex flex-col">
-                        <label for="Name">Name</label>
-                        <input type="text" name="" id="Name" class="border border-black w-[250px]">
-                    </div>
-                    <div class="flex flex-col">
-                        <label for="Message">Message</label>
-                        <textarea type="text" name="" id="Message" class="border border-black w-[250px]">
-                            </textarea>
-                        </div>
-                </form>
-                    
-                        <button class="bg-[#4ade80] rounded-lg px-4 py-2 w-30">Submit</button>
-                
-            </div>
-        </div>
-
                 <!-- Footer -->
-            <div class="font-[Satoshi-Regular] w-[70%] mx-auto grid grid-col grid-cols-1 py-4">
-                <div class="flex flex-row justify-between">
+                <div class="font-[Satoshi-Regular] w-[70%] mx-auto grid grid-col grid-cols-1 py-4">
+                    <div class="flex flex-row justify-between">
                         <p class="text-[14px] font-[400] leading-[20px]">© 2024 by Kannimalathi. All rights reserved.</p>
                           <div class="flex flex-row justify-between gap-3">   
                         <svg
@@ -130,11 +168,15 @@
                                           d="M8.08 20A11.07 11.07 0 0 0 19.52 9A8.1 8.1 0 0 0 21 6.16a.44.44 0 0 0-.62-.51a1.88 1.88 0 0 1-2.16-.38a3.89 3.89 0 0 0-5.58-.17A4.13 4.13 0 0 0 11.49 9C8.14 9.2 5.84 7.61 4 5.43a.43.43 0 0 0-.75.24a9.68 9.68 0 0 0 4.6 10.05A6.73 6.73 0 0 1 3.38 18a.45.45 0 0 0-.14.84A11 11 0 0 0 8.08 20"
                                         ></path>
                                       </svg>
-                          </div>                             
-                </div>
-            </div>
+                                    </div>
 
+                                  
+                              
+                    </div>
 
         </div>
+    </section>
+    <!-- Index Section Ending -->
+    
 </body>
 </html>

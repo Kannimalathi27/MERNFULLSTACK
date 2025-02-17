@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+          <div class="w-[50%] mx-auto flex flex-col justify-center items-center p-45">
+            <div class="flex flex-col justify-center items-center py-10 gap-7">
+                <p class="text-[50px]">COUNTER</p>
+                <p id="num" class="text-[32px] font-bold">0</p>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <button id="minusbtn" class=" bg-slate-200 border-black border-[2px] p-3 rounded-xl text-lg font-bold">-</button>
+                    <button id="resetbtn" class="border-black bg-slate-200 border-[3px] p-3 rounded-xl text-lg font-bold">Reset</button>
+                    <button id="plusbtn" class=" bg-slate-200 border-black border-[2px] p-3 rounded-xl text-lg font-bold">+</button>
+                </div>
+            </div>
+        </div>
+    <script>
+
+        const paraElement = document.getElementById("num")
+        const plusElement = document.getElementById("plusbtn")
+        const resetElement = document.getElementById("resetbtn")
+        const minusElement = document.getElementById("minusbtn")
+
+        plusElement.addEventListener("click", () => {
+            paraElement.textContent = parseInt(paraElement.textContent) + 1
+            console.log("plusElement")
+            paraElement.style.color="green"
+            
+
+        })
+        minusElement.addEventListener("click", () => {
+            paraElement.textContent = parseInt(paraElement.textContent) - 1
+            console.log("minusElement")
+            paraElement.style.color="red"
+
+        })
+        resetElement.addEventListener("click", () => {
+            paraElement.textContent = 0
+            console.log("resetElement")
+            paraElement.style.color="black"
+
+        })
+
+    </script>
+</body>
+</html>
